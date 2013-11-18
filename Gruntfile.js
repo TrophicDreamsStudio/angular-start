@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   // configurable paths
   var yeomanConfig = {
     app: 'app',
-    dist: 'dist'
+    dist: 'appengine/static'
   };
 
   try {
@@ -332,7 +332,7 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'concat',
     'copy',
-    'cdnify',
+    //'cdnify',
     'ngmin',
     'cssmin',
     'uglify',

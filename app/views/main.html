@@ -1,9 +1,15 @@
+<flashbox show-error="This is me, this is real"></flashbox>
 <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+    <h1>'Allo, 'Allo!</h1>
+
+    <p>You now have</p>
+    <ul>
+        <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+    </ul>
+    <p>installed.</p>
+
+    <h3>Enjoy coding! - Yeoman</h3>
+    <input ui-date ng-model="DateOfBirth"/>
+
+    <p>{{DateOfBirth}}</p>
 </div>

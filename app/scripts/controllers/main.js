@@ -7,4 +7,4 @@ angular.module('.App')
       'AngularJS',
       'Karma'
     ];
-  });
+  })

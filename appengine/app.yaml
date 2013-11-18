@@ -1,0 +1,29 @@
+application: gae-resource-sample
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /styles
+  static_dir: static/styles
+  
+- url: /bower_components
+  static_dir: static/bower_components
+  
+- url: /scripts
+  static_dir: static/scripts
+  
+- url: /views
+  static_dir: static/views
+  
+- url: /.*
+  script: main.app
+  
+libraries:
+- name: webapp2
+  version: "latest"
